@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('JMeter Test') {
+        stage('Build') {
             steps {
                 echo 'MENCUBA..'
             }
