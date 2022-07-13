@@ -1,0 +1,146 @@
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        color: white;
+        font-size: 1.4rem;
+    }
+}
+
+.tag {
+    border-radius: 20px;
+    padding: 3px 10px;
+
+    .tag_title {
+        font-size: 13px;
+        font-weight: 450;
+    }
+}
+
+.card_container {
+    -webkit-box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.22);
+    background: white;
+    color: #1e293b;
+    padding: 1rem;
+
+    .icon {
+        margin-bottom: 0.5rem;
+    }
+
+    .card_title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: var(--margin-xxs);
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: var(--margin-sm);
+    }
+
+    h4 {
+        color: #64748b;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .view_more {
+        display: flex;
+        justify-content: space-between;
+
+        svg {
+            transition: transform 200ms ease-in-out;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6366f1;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:hover svg {
+                transform: translateX(2px);
+            }
+        }
+    }
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: var(--padding-xs);
+}
+
+.message span {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+
+    svg {
+        font-size: 1.2rem;
+        transform: translateY(-1px);
+    }
+
+
+}
+
+
+.buttonAddRemove {
+    background: #fff;
+    border: 2px solid #92B4EC;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: #6366f1;
+
+
+    &:hover{
+      background-color: #5052c5;
+      background-position: 0 0;
+      color: #fff;
+
+    }
+
+    &:active{
+      background-color: initial;
+      background-position: 0 0;
+      color: #92B4EC;
+      opacity: .5;
+    }
+  }
+
+  .link{text-decoration: none;}

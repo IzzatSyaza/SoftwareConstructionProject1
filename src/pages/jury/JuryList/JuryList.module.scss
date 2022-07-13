@@ -1,0 +1,222 @@
+.title {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: var(--margin-xs);
+    margin-bottom: var(--margin-md);
+    color: #1e293b;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    svg {
+        font-size: 3rem;
+    }
+}
+
+.add {
+
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: var(--padding-md) var(--padding-md);
+    color: rgb(30, 41, 59);
+
+    h1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: var(--margin-xxs);
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+
+        svg {
+            font-size: 2rem;
+            flex-shrink: 0;
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.addAdminForm {
+
+
+    .adminDetail {
+        padding: 5px 15px 5px 15px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 20px;
+
+        .adminDetailLabel {
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(151, 150, 150);
+          }
+
+          .adminDetailInput {
+            height: 40px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+          }
+      }
+
+    .addButton{
+        width: 200px;
+        border: none;
+        background-color: darkblue;
+        color: white;
+        padding: 10px 10px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 30px 15px 10px;
+        cursor: pointer;
+    }
+  }
+
+  .wraptable{
+    overflow: auto;
+  }
+  .reportTitle {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .reportTable{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
+  
+  .reportTh{
+    text-align: left;
+  }
+  
+  .reportTd{
+    font-weight: 400;
+  }
+
+  .listItem{
+    font-weight: 400;
+  }
+
+  .listItemAction{
+    display: flex;
+    font-weight: 400;
+    .link{
+      text-decoration: none;
+    }
+
+    button{
+      display: flex;
+      margin-right: 6px;
+      align-items: center;
+      border-radius: 10px;
+      padding: 7px 10px;
+    }
+
+    .buttonDelete {
+      background: #FF4742;
+      border: 1px solid #FF4742;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      // display: inline-block;
+      line-height: 16px;
+      min-height: 40px;
+      outline: 0;
+      text-align: center;
+      text-rendering: geometricprecision;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      // vertical-align: middle;
+
+      &:hover{
+        background-color: initial;
+        background-position: 0 0;
+        color: #FF4742;
+      }
+
+      &:active{
+        background-color: initial;
+        background-position: 0 0;
+        color: #FF4742;
+        opacity: .5;
+      }
+    }
+
+    .buttonEdit {
+      background: #F8B400;
+      border: 1px solid #F8B400;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      // display: inline-block;
+      line-height: 16px;
+      min-height: 40px;
+      outline: 0;
+      text-align: center;
+      text-rendering: geometricprecision;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      
+      // vertical-align: middle;
+
+      &:hover{
+        background-color: initial;
+        background-position: 0 0;
+        color: #F8B400;
+      }
+
+      &:active{
+        background-color: initial;
+        background-position: 0 0;
+        color: #F8B400;
+        opacity: .5;
+      }
+    }
+
+  }
+
+  .listButton{
+    display: flex;
+    margin-right: 6px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 7px 10px;
+  }
+
+.listIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+}
+
+
+
+  
+// }
+// .button24:hover,
+//   .button24:active {
+//     background-color: initial;
+//     background-position: 0 0;
+//     color: #FF4742;
+//   }
+
+//   .button24:active {
+//     opacity: .5;
+//   }

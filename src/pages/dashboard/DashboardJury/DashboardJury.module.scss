@@ -1,0 +1,40 @@
+.welcome {
+    background: rgb(199, 210, 254);
+    border-radius: 10px;
+    padding: var(--padding-md) var(--padding-md);
+    color: rgb(30, 41, 59);
+
+    h1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: var(--margin-xxs);
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+
+        svg {
+            font-size: 2rem;
+            flex-shrink: 0;
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.cards_container {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @media screen and (max-width: 470px) {
+        display: flex;
+        flex-direction: column;
+    }
+}

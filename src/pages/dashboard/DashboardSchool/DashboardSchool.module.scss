@@ -1,0 +1,74 @@
+.welcome {
+    background: rgb(199, 210, 254);
+    border-radius: 10px;
+    padding: var(--padding-md) var(--padding-md);
+    color: rgb(30, 41, 59);
+
+    h1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: var(--margin-xxs);
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+
+        svg {
+            font-size: 2rem;
+            flex-shrink: 0;
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.cards_container {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @media screen and (max-width: 470px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.buttonEdit {
+    background: #F8B400;
+    border: 1px solid #F8B400;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    // display: inline-block;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    // vertical-align: middle;
+
+    &:hover{
+      background-color: initial;
+      background-position: 0 0;
+      color: #F8B400;
+    }
+
+    &:active{
+      background-color: initial;
+      background-position: 0 0;
+      color: #F8B400;
+      opacity: .5;
+    }
+  }

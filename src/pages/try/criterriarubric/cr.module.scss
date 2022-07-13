@@ -1,0 +1,246 @@
+.title {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: var(--margin-xs);
+    margin-bottom: var(--margin-md);
+    color: #1e293b;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    svg {
+        font-size: 3rem;
+    }
+}
+
+.criteria {
+
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: var(--padding-md) var(--padding-md);
+    color: rgb(30, 41, 59);
+
+    h1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: var(--margin-xxs);
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+
+        svg {
+            font-size: 2rem;
+            flex-shrink: 0;
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.addCriteriaForm {
+
+
+    .criteriaDetail {
+        padding: 5px 15px 5px 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 0;
+
+        .wrapInput {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          // margin-top: 10px;
+          // margin-right: 20px;
+          
+        }
+
+        .wrapCriteriaMarkBtn {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          // margin-top: 10px;
+          // margin-right: 20px;
+          @media screen and (max-width: 600px) {
+            flex-direction: column;
+
+        }
+        }
+
+        .wrapRubric {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          @media screen and (max-width: 550px) {
+            flex-direction: column;
+        }
+        }
+
+        .wrapMarkCriteria {
+          display: flex;
+          flex-direction: wrap;
+        }
+
+        // .wrapRubric {
+        //   display: flex;
+        //   flex-direction: row;
+        //   width: 100%;
+        // }
+
+        .rubricTitle {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          margin: 10px 20px 10px 0;
+          @media screen and (max-width: 550px) {
+            width: 100%;
+
+        }
+        }
+
+        .newCriteria {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-top: 10px;
+            margin-right: 20px;
+          }
+
+          .fullMark {
+            display: flex;
+            flex-direction: column;
+            width: 54px;
+            margin-top: 10px;
+          }
+
+          .descrptionCriteria {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 100px;
+            margin: 10px 20px 10px 0;
+          }
+
+        .criteriaDetailLabel {
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(151, 150, 150);
+            @media screen and (max-width: 600px) {
+              font-size: 12px;
+          }
+          }
+
+          .criteriaDetailInput {
+            height: 40px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+          }
+      }
+
+    .addButton{
+        width: 110px;
+        border: none;
+        background-color: darkblue;
+        color: white;
+        padding: 10px 10px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 30px 15px 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+      }
+    }
+  }
+  .errorText{
+    margin: 0 5px;
+    padding: 0;
+    color: red;
+  }
+
+  .listItemAction{
+    display: flex;
+    font-weight: 400;
+    align-items : center ;
+    justify-content: center;
+
+    .btnCriteria{
+      background: #92B4EC;
+      border: 1px solid #92B4EC;
+      margin-top: 32px;
+      @media screen and (max-width: 550px) {
+        width: 100%;
+        margin-top: 2px;
+    }
+      &:hover{
+        background-color: initial;
+        background-position: 0 0;
+        color: #92B4EC;
+      }
+  
+      &:active{
+        background-color: initial;
+        background-position: 0 0;
+        color: #92B4EC;
+        opacity: .5;
+      }
+    }
+    .btnRubtic{
+      background: #a1ec92;
+      border: 1px solid #a1ec92;
+      margin-top: 32px;
+      @media screen and (max-width: 550px) {
+        width: 100%;
+        margin-top: 2px;
+    }
+      &:hover{
+        background-color: initial;
+        background-position: 0 0;
+        color: #a1ec92;
+      }
+  
+      &:active{
+        background-color: initial;
+        background-position: 0 0;
+        color: #a1ec92;
+        opacity: .5;
+      }
+    }
+
+    button{
+      display: flex;
+      margin-right: 6px;
+      align-items: center;
+      border-radius: 10px;
+      padding: 7px 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      // display: inline-block;
+      line-height: 16px;
+      min-height: 40px;
+      outline: 0;
+      text-align: center;
+      text-rendering: geometricprecision;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      // vertical-align: middle;
+      
+    }
+  
+  }
